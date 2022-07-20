@@ -10,22 +10,62 @@
    <!-- <p style="color:blueviolet;font-size: 24px">我是 一博，我在 广州</p> -->
 
    <!-- //头部 -->
-<div style="background:rgb(185, 223, 154);height: 240px;">
-<img src="./WechatIMG75 1.png" alt="" style="width: 64px; border-radius:32px">
+<div class="myhead">
+  <div ><img src="./WechatIMG75 1.png" alt="" style="width: 100px; border-radius:64px">
+  </div>
 </div>
 
    <!-- //身体 -->
-   <div style="background: rgb(237, 237, 237); max-width:960px; margin: auto;">
-   <p style="color:rgb(57, 57, 57);font-size: 24px">我是 一博，我在 广州</p>
-   <p style="color:rgb(57, 57, 57);font-size: 24px">我是 一博，我在 广州</p>
-   <p style="color:rgb(57, 57, 57);font-size: 24px">我是 一博，我在 广州</p>
-   <p style="color:rgb(57, 57, 57);font-size: 24px">我是 一博，我在 广州</p>
-   <p style="color:rgb(57, 57, 57);font-size: 24px">我是 一博，我在 广州</p>
+   <div class="mybody">
+   <p class="container">我是 一博，我在 广州</p>
 </div>
    <!-- //页尾 -->
-   <div style="background:gray; height:200px">
-    <p style="color:rgb(255, 255, 255);font-size: 24px; text-align: center;">这是一博的 blog</p>
-    <p style="color:rgb(255, 255, 255);font-size: 16px; text-align: center;">备案号 0001</p>
+   <div class="foot">
+    <p class="">这是一博的 blog</p>
+    <p>备案号 0001</p>
 </div>
   </body>
 </html>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .myhead{
+        height: 240px;
+        background: rgb(178, 231, 177);
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        
+}
+  .mybody{
+    background: rgb(237, 237, 237); 
+    max-width: 960px;
+    margin: auto;
+    
+    padding: 32px 16px;
+}
+  .container{
+    color:rgb(57, 57, 57);
+    font-size: 24px;
+    text-align: center;
+} 
+  .foot{
+    background:gray; 
+    height:200px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content:center;
+    align-items:center;
+/* 父级继承给子级 */
+    text-align: center;
+
+    
+} 
+</style>
+
